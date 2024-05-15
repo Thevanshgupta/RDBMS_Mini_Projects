@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company Database App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <h1>Company Database App</h1>
+  <div id="app">
+    <!-- Add Employee Form -->
+    <form id="add-employee">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name"><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email"><br>
+      <label for="job-title">Job Title:</label><br>
+      <input type="text" id="job-title" name="job-title"><br>
+      <label for="salary">Salary:</label><br>
+      <input type="number" id="salary" name="salary"><br>
+      <button type="submit">Add Employee</button>
+    </form>
+
+    <!-- Delete Employee Form -->
+    <form id="delete-employee-form">
+      <label for="employee-id">Employee ID:</label><br>
+      <input type="number" id="employee-id" name="employee-id"><br>
+      <button type="submit">Delete Employee</button>
+    </form>
+
+    <!-- Load Data Button -->
+    <button id="load-data-button">Load Data</button>
+
+    <!-- Display Data -->
+    <div id="data-display"></div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
